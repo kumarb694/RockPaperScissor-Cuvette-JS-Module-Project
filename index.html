@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gpproject">
+        <div class="projectparent">
+            <div class="wholecontent">
+                <div class="headerp">
+                    <div class="headerchild1">
+                        <div class="heading">
+                            <p class="headingline">ROCK</p>
+                            <p class="headingline">PAPER</p>
+                            <p class="headingline">SCISSORS</p>
+                        </div>
+                        <div class="scoreparent">
+                            <div class="scorebox">
+                                <div class="heading1and2">
+                                    <div class="insideheading1">
+                                        <div class="h1l1">COMPUTER</div>
+                                        <div class="h1l2">SCORE</div>
+                                    </div>
+                                </div>
+                                <div class="compscorebigbox">
+                                    <div id="cscore" class="scorenum">
+                                        0
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="scorebox">
+                                <div class="heading1and2">
+                                    <div class="insideheading2">
+                                        <div class="h2l1">YOUR</div>
+                                        <div class="h2l2">SCORE</div>
+                                    </div>
+                                </div>
+                                <div class="humanscorebigbox">
+                                    <div id="hscore" class="scorenum">
+                                        0
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div id="indexpbottom" class="bottomcontent">
+                    <div class="choices">
+                        <div class="l1">
+
+                        </div>
+                        <div class="l2">
+                            
+                        </div>
+                        <div class="l3">
+                            
+                        </div>
+                        <div id="rockbtn" class="rockb">
+                            <img class="rimg" src="rock.svg" alt="rock" >
+                        </div>
+                        <div id="scissorbtn" class="scissorb">
+                            <img class="simg" src="scissor.svg" alt="scissor" >
+                        </div>
+                        <div  id="paperbtn" class="paperb">
+                            <img class="pimg" src="paper.svg" alt="paper" >
+                        </div>
+                    </div>
+                    <div class="rules">
+                        
+                    </div>
+                    <div id="btn1" class="rulesb">
+                        <div class="ruleswritten">
+                            RULES
+                        </div>
+                    </div>
+                </div> 
+                <div id="winpage" class="winpage">
+                    <div class="wc1">
+
+                    </div>
+                    <div class="wc2">
+
+                    </div>
+                    <div class="wc3">
+
+                    </div>
+                    <div class="winpyp">
+                        YOU PICKED
+                    </div>
+                    <div class="winppcp">
+                        PC PICKED
+                    </div>
+                    <div class="winpageresult">
+                        YOU WIN
+                    </div>
+                    <div class="winpageresult2">
+                        AGAINST PC
+                    </div>
+                    <div id="wplayagain" class="winpageplayagainbtn">
+                        <div  class="winplayagainbtntext">
+                            PLAY AGAIN
+                        </div>
+                    </div>
+                    <div class="wintop">
+                        <div class="wintopleft">
+                            <div id="winpwborder" class="winpagewinlogo">
+                                <div id="winpwr" class="winwinrock">
+                                    <img src="rock.svg" alt="rock">
+                                </div>
+                                <div id="winpws" class="winwinscissor">
+                                    <img src="scissor.svg" alt="scissor">
+                                </div>
+                                <div id="winpwp" class="winwinpaper">
+                                    <img src="paper.svg" alt="paper">
+                                </div>
+                                
+                            </div>
+                            <div id="winplborder" class="winpageloselogo">
+                                <div id="winplr" class="winloserock">
+                                    <img src="rock.svg" alt="rock">
+                                </div>
+                                <div id="winpls" class="winlosescissor">
+                                    <img src="scissor.svg" alt="scissor">
+                                </div>
+                                <div id="winplp" class="winlosepaper">
+                                    <img src="paper.svg" alt="paper">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wintopright">
+
+                        </div>
+                    </div>
+                    <div class="winbottom">
+
+                    </div>
+                    <div id="winprulebtn" class="winpagerules">
+                        <div class="winpagerulebtn">
+                            RULES
+                        </div>
+                    </div>
+                    <div id="winpnextbtn" class="nextbtn">
+                        <div class="winnext">
+                            NEXT
+                        </div>
+                    </div>
+                </div>
+                <div id="losep" class="losepage">
+                    <div class="lc1">
+
+                    </div>
+                    <div class="lc2">
+
+                    </div>
+                    <div class="lc3">
+
+                    </div>
+                    <div class="loseptop">
+                        <div class="loseptopleft">
+                            <div id="loseplborder" class="loseploselogo">
+                                <div id="loseplr" class="loseplr">
+                                    <img src="rock.svg" alt="rock">
+                                </div>
+                                <div id="losepls" class="losepls">
+                                    <img src="scissor.svg" alt="scissor">
+                                </div>
+                                <div id="loseplp" class="loseplp">
+                                    <img src="paper.svg" alt="paper">
+                                </div>
+                            </div>
+                            <div id="losepwborder" class="losepwinlogo">
+                                <div id="losepwr" class="losepwr">
+                                    <img src="rock.svg" alt="rock">
+                                </div>
+                                <div id="losepws" class="losepws">
+                                    <img src="scissor.svg" alt="scissor">
+                                </div>
+                                <div id="losepwp" class="losepwp">
+                                    <img src="paper.svg" alt="paper">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loseptopright">
+
+                        </div>
+                    </div>
+                    <div class="losepbottom">
+
+                    </div>
+                    <div class="losel1">
+                        YOU LOST
+                    </div>
+                    <div class="losel2">
+                        AGAINST PC
+                    </div>
+                    <div id="losepplayagainbtn" class="losepplayagain">
+                        <div class="losepplayagainbutton">
+                            PLAY AGAIN
+                        </div>
+                    </div>
+                    <div class="lpyoupicked">
+                        YOU PICKED
+                    </div>
+                    <div class="lppcpicked">
+                        PC PICKED
+                    </div>
+                    <div id="lprulesbtn" class="lprules">
+                        <div class="lprulesbtn">
+                            RULES
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="tiep" class="tiepage">
+                    <div class="tiepyoupickedheading">
+                        YOU PICKED
+                    </div>
+                    <div class="tieppcpickedheading">
+                        PC PICKED
+                    </div>
+                    <div class="tieupheading">
+                        TIE UP
+                    </div>
+                    <div id="replaybtn" class="tiepreplaybtn">
+                        <div class="replaybtnheading">
+                            REPLAY
+                        </div>
+                    </div>
+                    
+                    <div id="tiepypborder" class="tiepyoupickedlogo">
+                        <div id="tiepypr" class="tiepypr">
+                            <img src="rock.svg" alt="rock">
+                        </div>
+                        <div id="tiepyps" class="tiepyps">
+                            <img src="scissor.svg" alt="scissor">
+                        </div>
+                        <div id="tiepypp" class="tiepypp">
+                            <img src="paper.svg" alt="paper">
+                        </div>
+                    </div>
+                    
+                    <div id="tieppcpborder" class="tieppcpickedlogo">
+                        <div id="tieppcpr" class="tieppcpr">
+                            <img src="rock.svg" alt="rock">
+                        </div>
+                        <div id="tieppcps" class="tieppcps">
+                            <img src="scissor.svg" alt="scissor">
+                        </div>
+                        <div id="tieppcpp" class="tieppcpp">
+                            <img src="paper.svg" alt="paper">
+                        </div>
+                    </div>
+                    
+                    <div id="tieprulesbtn" class="tieprulesbtn">
+                        <div class="tieprulesbtnheading">
+                            RULES
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="rulesboard" class="commonruleboard">
+                <div class="newrulesboard">
+
+                </div>
+                <div class="newgamerulesheading">
+                    Game Rules
+                </div>
+                <div class="newdot1">
+
+                </div>
+                <div class="newdot2">
+                    
+                </div>
+                <div class="newdot3">
+                    
+                </div>
+                <div class="newdot4">
+                    
+                </div>
+                <div class="newl1">
+                    Rock beats scissors, scissors beat paper, and paper beats rock.
+                </div>
+                <div class="newl2">
+                    Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”
+                </div>
+                <div class="newl3">
+                    Use rock, paper, scissors to settle minor decisions or simply play to pass the time
+                </div>
+                <div class="newl4">
+                    If both players lay down the same hand, each player lays down another hand
+                </div>
+                <div id="rulesclose" class="newclosesignbox">
+                    <div class="newcrossmark">
+                        X
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+            
+       
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
