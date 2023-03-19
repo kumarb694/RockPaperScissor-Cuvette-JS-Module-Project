@@ -270,7 +270,7 @@ function celebrationp()
         localStorage.setItem("rulesopen","0");
     }
     
-    window.open('http://127.0.0.1:5500/page2.html', '_self');
+    window.open('https://kumarb694.github.io/RockPaperScissor-Cuvette-JS-Module-Project/page2.html', '_self');
 }
 function wtaketoindex()
 {
